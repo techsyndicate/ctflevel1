@@ -1,0 +1,10 @@
+<div>
+    <form action="/login/<%= user.email %>" method="post">
+        <input id="email" name="email" placeholder="email" type="email" value="<%= user.email %>" />
+        <p>Verify you are a human by breaking this string a 100 times!</p>
+        <p><%= user.currentChallenge %></p>
+        <input hidden id="currentChallenge" name="currentChallenge" value="<%= user.currentChallenge %>" />
+        <input id="solution" name="solution" placeholder="solution" type="text" />
+        <button id="submit" type="submit">Login</button>
+    </form>
+</div>
